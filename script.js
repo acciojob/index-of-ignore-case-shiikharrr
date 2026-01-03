@@ -1,5 +1,11 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  if (s2 === "") 
+	  return 0; 
+	if (s1 === "" || s2.length > s1.length)
+		return -1;
+	const hay = s1.toLowerCase();
+	const needle = s2.toLowerCase();
+	return hay.indexOf(needle);
 }
 
 // Please do not change the code below
